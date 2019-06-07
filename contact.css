@@ -1,0 +1,164 @@
+body {
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #4440AD;
+}
+
+nav {
+    text-align: left;
+    z-index: 1;
+}
+
+nav ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0px 10px 0px 10px;
+    padding-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #eee;
+    transition-duration: 200ms;
+}
+
+h1 {
+    font-size: 26px;
+    color: #fff;
+    display: grid;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 22px;
+    color: #fff;
+    display: grid;
+    justify-content: center;
+}
+
+.input {
+    padding-left: 30px;
+    margin: 20px;
+    line-height: 75px;
+    width: 300px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+.fa-user {
+    position: relative;
+    left: -340px;
+    margin-top: 50px;
+    color: #000;
+    opacity: 0.6;
+}
+
+.fa-phone {
+    position: relative;
+    left: -340px;
+    margin-top: 50px;
+    color: #000;
+    opacity: 0.6;
+}
+
+.fa-envelope {
+    position: relative;
+    left: -340px;
+    margin-top: 50px;
+    color: #000;
+    opacity: 0.6;
+}
+
+.message {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    height: 150px;
+    width: 500px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 50px;
+    transform: translate(-50%, -50%);
+
+}
+
+#messagebox {
+    margin-left: 50%;
+    position: relative;
+}
+
+.fa-comments {
+    position: relative;
+    left: -260px;
+    top: -162px;
+    color: #000;
+    opacity: 0.6;
+}
+
+.container {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.btn {
+    position: absolute;
+    display: block;
+    height: 50px;
+    margin-left: 145px;
+    margin-top: -85px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    font-family: montserrat, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 14px 30px;
+    text-align: center;
+    z-index: 1;
+}
+
+.btn:hover {
+    transition-duration: 100ms;
+    border: 3px solid #32CD32;
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+section {
+    background-color: #C0C0C0;
+    height: 300px;
+    margin-top: 100px;
+}
+
+
+.sectionbar {
+    margin-top: 20px;
+    display: block;
+}
