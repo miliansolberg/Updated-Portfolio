@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body{
+    ::-webkit-scrollbar {
+        height: 0.3rem;
+        width: 0.3rem;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: transparent; 
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #8c6cae; 
+        border-radius: 0.7rem;
+    }
+      
+    ::-webkit-scrollbar-thumb:hover {
+        background: #8c6cae; 
+    }
+    padding: 0;
+    margin: 0;
+    background-color: #2b0f49;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    .navbar{
+        width: 100%;
+        background-image: linear-gradient(to bottom, #3a0c6b 50%, #370b65);
+        display: flex;
+        height: 6.85rem;
+        .logo{
+            margin-top: 1.8rem;
+            margin-left: 3rem;
+            a{
+                img{
+                    height: 14rem;
+                    position: absolute;
+                    top: -3.5rem;
+                    left: 0;
+                }
+            }
+        }
+        .menu{
+            margin-left: 13%;
+            margin-top: 2.65rem;
+            a{
+                text-decoration: none;
+                li{
+                    display: flex;
+                    .left{
+    
+                    }
+                    .right{
+                        color: #fff;
+                        margin-top: -1.3rem;
+                        margin-left: 1rem;                
+                        .liName{
+                            font-weight: bold;
+                        }
+                        .amount{
+                            color: #9e9ecc;
+                            background-color: #2f0956;
+                            margin-top: -0.8rem;
+                            border-radius: 10px;
+                            padding: 0.3rem;
+                            text-align: center;
+                            font-size: 0.75rem;
+                        }
+                    }
+                }
+            }
+        }
+        .userSection{
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: flex;
+            .userNameSection{
+                width: 42%;
+                text-align: center;
+                font-size: 15px;
+                line-height: 0;
+                margin-top: 2.3rem;
+                margin-right: 2rem;
+                .name{
+                    color: #fff;
+                    font-weight: bold;
+                }
+                .level{
+                    font-size: 13px;
+                    color: #ddbcff;
+                    text-transform: uppercase;
+                }
+            }
+            .userLogoArea{
+                background-color: #340a60;
+                padding: 1.75rem;
+                display: flex;
+                .userLogo{
+                    height: 3.4rem;
+                    margin-right: 2rem;
+                }
+                .fas{
+                    position: absolute;
+                    right: 0.5rem;
+                    top: 45%;
+                    color: #bc84f8;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    #openBtn{
+        background-color: #360a62;
+        padding: 0.5rem;
+        position: absolute;
+        left: 0;
+        top: 6.85rem;
+        cursor: pointer;
+        .fas{
+            color: #82b3ff;
+        }
+    }
+    #closeBtn{
+        background-color: #360a62;
+        padding: 0.5rem;
+        position: absolute;
+        left: 19%;
+        top: 6.85rem;
+        cursor: pointer;
+        .fas{
+            color: #82b3ff;
+        }
+    }
+    #chat{
+        height: calc(100vh - 6.85rem);
+        position: absolute;
+        top: 6.85rem;
+        background-color: #330b5b;
+        width: 19%;
+        z-index: 99;
+        .chatHead{
+            background-color: #471e71;
+            padding: 0.61rem;
+            display: flex;
+            color: #b596d5;
+            font-size: 13px;
+            .circle{
+                width: 0.5rem;
+                height: 0.5rem;
+                background-color: #82b3ff;
+                border-radius: 50%;
+                position: absolute;
+                left: 0;
+                top: 0.8rem;
+                margin: 0 1rem;
+            }
+            .amount{
+                margin-left: 1.3rem;
+                color: #fff;
+                font-weight: bold;
+            }
+        }
+        .chatBody{
+            width: 100%;
+            height: 85%;
+            .chatMsg{
+                display: flex;
+                border-bottom: 0.1em solid #441f69;
+                width: 90%;
+                margin-left: 5%;
+                margin-top: 1rem;
+                .left{
+                    img{
+                        height: 3rem;
+                        margin-top: 0.94rem;
+                    }
+                }
+                .right{
+                    line-height: 1rem;
+                    margin-left: 0.5rem;
+                    .userInfo{
+                        display: flex;
+                        color: #fff;
+                        .userName{
+                            font-weight: bold;
+                        }
+                        .rank{
+                            margin-left: 0.4rem;
+                            font-size: 0.8rem;
+                            margin-top: 1rem;
+                            text-transform: uppercase;
+                        }
+                        .dev{
+                            color: #ffe554;
+                        }
+                        .admin{
+                            color: #ff1e78;
+                        }
+                        .time{
+                            position: absolute;
+                            right: 1rem;
+                            margin-top: 0.9rem;
+                            color: #d2c6dd;
+                            font-size: 0.8rem;
+                        }
+                    }
+                    .msg{
+                        margin-top: -0.8rem;
+                        margin-bottom: 0.8rem;
+                        font-size: 0.8rem;
+                        color: #d2c6dd;
+                    }
+                }
+            }
+        }
+        .chatSendMsg{
+            position: absolute;
+            bottom: 0;
+            background-color: #360a62;
+            padding: 1rem;
+            width: calc(100% - 2rem);
+            .inputArea{
+                margin-bottom: 0.7rem;
+                width: 100%;
+                background-color: #320c59;
+                padding: 0.5rem;
+                margin-left: -0.5rem;
+                border-radius: 2rem;
+                input{
+                    background: transparent;
+                    border: none;
+                    width: 80%;
+                    margin-left: 1.5rem;
+                    color: #885db6;
+                    &:focus{
+                        outline: none;
+                    }
+                    &::placeholder{
+                        color: #885db6;
+                    }
+                }
+                a{
+                    color: #885db6;
+                }
+            }
+            .nav{
+                text-align: center;
+                font-size: 0.8rem;
+                a{
+                    text-decoration: none;
+                    margin-left: 0.5rem;
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+    }
+    .mainContent{
+        width: 80%;
+        margin-left: 20.5%;
+        margin-top: 1rem;
+        .jackpotHash{
+            position: absolute;
+            right: 1rem;
+            top: 7.5rem;
+            color: #8c6cae;
+            font-size: 0.7rem;
+        }
+        .left{
+            width: 20%;
+            margin-top: 6rem;
+            .userIn{
+                margin: 1rem auto;
+                .topBar{
+                    background-color: #3b0c6b;
+                    display: flex;
+                    border-radius: 50px;
+                    padding: 1rem;
+                    position: relative;
+                    .userLogo{
+                        height: 3.4rem;
+                    }
+                    .userInfo{
+                        margin-top: 0.5rem;
+                        margin-left: 1rem;
+                        .name{
+                            color: #fff;
+                        }
+                        .perc, .comma, .amount{
+                            color: #b995df;
+                            font-size: 0.8rem;
+                        }
+                    }
+                    .userColor{
+                        width: 2rem;
+                        height: 2rem;
+                        border-radius: 50%;
+                        position: absolute;
+                        right: 1rem;
+                        top: 1.7rem;
+                    }
+                    .purp{
+                        background: #a769e9;
+                    }
+                    .blue{
+                        background: #81b2fe;
+                    }
+                    .yellow{
+                        background: #ebd254;
+                    }
+                    .pink{
+                        background: #e254eb;
+                    }
+                }
+                .items{
+                    background: #2a0e47;
+                    overflow-y: hidden;
+                    overflow-x: scroll;
+                    display: flex;
+                    padding: 1rem;
+                    margin-top: -3rem;
+                    .item{
+                        margin: 0 0.6rem;
+                        margin-top: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    .logo{
+        display: none;
+    }   
+    .menu{
+        display: none !important;
+    }
+    .userNameSection{
+        margin-right: 6rem !important;
+    }
+    #closeBtn{
+        left: 94.2% !important;
+        z-index: 999;
+        background: transparent !important;
+    }
+    #chat{
+        width: 100% !important;
+    }
+    .mainContent{
+        width: 100%;
+        .left{
+            width: 100% !important;
+        }
+    }
+    
+}
